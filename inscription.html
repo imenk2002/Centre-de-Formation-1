@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">Centre Formation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu3">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formations.html">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="inscription.html">Inscription</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container mt-5">
+    <header class="text-center mb-4">
+      <h2>Formulaire d'inscription</h2>
+      <p class="lead">
+        Remplissez ce formulaire pour vous inscrire à une formation.
+      </p>
+    </header>
+
+    <form class="form-inscription">
+        
+        <!-- SECTION 1: Informations personnelles (SANS téléphone) -->
+        <fieldset class="mb-4 section-1">
+            <legend>Informations personnelles</legend>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="nom">Nom *</label>
+                    <input id="nom" name="nom" type="text" class="form-control mb-3" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="prenom">Prénom *</label>
+                    <input id="prenom" name="prenom" type="text" class="form-control mb-3" required>
+                </div>
+            </div>
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" class="form-control mb-3" required>
+        </fieldset>
+
+        <!-- SECTION 2: Formation (Présentiel / En ligne) -->
+        <fieldset class="mb-4 section-2">
+            <legend>Votre formation</legend>
+
+            <label for="formation">Choisir votre formation :</label>
+            <select id="formation" name="formation" class="form-control mb-3" required>
+                <option value="">Sélectionnez une formation</option>
+                <option>Embedded Systems & IoT</option>
+                <option>Mobile Development</option>
+                <option>Web & Multimedia</option>
+                <option>Data Science & AI</option>
+                <option>Sécurité Informatique</option>
+            </select>
+
+            <!-- MODIF 2: Présentiel / En ligne -->
+            <label>Type de suivi :</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="presentiel" name="type" value="presentiel" checked>
+                <label class="form-check-label" for="presentiel">Présentiel</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="enligne" name="type" value="enligne">
+                <label class="form-check-label" for="enligne">En ligne</label>
+            </div>
+        </fieldset>
+
+        <!-- SECTION 3: Message (SANS date/distance) -->
+        <fieldset class="mb-4">
+            <legend>Message</legend>
+            <label for="commentaire">Votre commentaire (facultatif)</label>
+            <textarea id="commentaire" name="commentaire" rows="4" class="form-control" placeholder="Votre expérience, vos attentes, questions..."></textarea>
+        </fieldset>
+
+        <!-- BOUTONS -->
+        <div class="text-end">
+            <button type="reset" class="btn btn-outline-secondary me-2">Effacer</button>
+            <button type="submit" class="btn btn-success btn-shadow">S'inscrire</button>
+        </div>
+
+    </form>
+
+    <div class="alert alert-info mt-5" role="alert">
+        <strong>Merci !</strong> Votre inscription sera traitée sous 48h. 
+        Vous recevrez une confirmation par email.
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center mt-5 p-3 site-footer">
+    <p class="mb-0">
+        © 2026 Centre de Formation - Tous droits réservés | 
+        <a href="mailto:contact@centreformation.com" class="footer-link">contact@centreformation.com</a>
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

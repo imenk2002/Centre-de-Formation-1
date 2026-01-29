@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">Centre Formation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu2">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="formations.html">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inscription.html">Inscription</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container mt-5">
+    <header class="text-center mb-4">
+      <h2>Nos Formations</h2>
+      <p class="sous-titre">
+        Choisissez la formation qui correspond le mieux à votre projet professionnel.
+      </p>
+    </header>
+
+    <section class="row mt-4">
+
+        <!-- CARTE 1: Embedded Systems & IoT -->
+        <article class="col-md-6 col-lg-4 mb-4">
+            <div class="card formation-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Embedded Systems & IoT</h5>
+                    <p>Microcontrôleurs, capteurs, protocoles IoT</p>
+                    <p><strong>Niveau :</strong> Intermédiaire</p>
+                    <p><strong>Durée :</strong> 3 mois</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIoT">
+                        Détails
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARTE 2: Mobile Development -->
+        <article class="col-md-6 col-lg-4 mb-4">
+            <div class="card formation-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Mobile Development</h5>
+                    <p>Android, iOS, Flutter, React Native</p>
+                    <p><strong>Niveau :</strong> Débutant</p>
+                    <p><strong>Durée :</strong> 2 mois</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMobile">
+                        Détails
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARTE 3: Web & Multimedia -->
+        <article class="col-md-6 col-lg-4 mb-4">
+            <div class="card formation-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Web & Multimedia</h5>
+                    <p>HTML5, CSS3, JavaScript, Adobe Suite</p>
+                    <p><strong>Niveau :</strong> Débutant</p>
+                    <p><strong>Durée :</strong> 2 mois</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWeb">
+                        Détails
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARTE 4: Data Science & AI -->
+        <article class="col-md-6 col-lg-4 mb-4">
+            <div class="card formation-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Data Science & AI</h5>
+                    <p>Python, Machine Learning, TensorFlow</p>
+                    <p><strong>Niveau :</strong> Avancé</p>
+                    <p><strong>Durée :</strong> 4 mois</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalData">
+                        Détails
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARTE 5: Sécurité Informatique -->
+        <article class="col-md-6 col-lg-4 mb-4">
+            <div class="card formation-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Sécurité Informatique</h5>
+                    <p>Cybersécurité, réseaux, cryptographie</p>
+                    <p><strong>Niveau :</strong> Intermédiaire</p>
+                    <p><strong>Durée :</strong> 3 mois</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSecu">
+                        Détails
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        
+
+    </section>
+</main>
+
+<!-- 6 MODALS (un par formation) -->
+<div class="modal fade" id="modalIoT">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Embedded Systems & IoT</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Microcontrôleurs Arduino/Raspberry Pi</li>
+          <li>Capteurs et actionneurs</li>
+          <li>Protocoles MQTT, CoAP</li>
+          <li>Projets IoT pratiques</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-success">S’inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMobile">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Mobile Development</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Android Studio / Kotlin</li>
+          <li>Swift / Xcode</li>
+          <li>Flutter cross-platform</li>
+          <li>API REST et bases de données</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-success">S’inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalWeb">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Web & Multimedia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>Bootstrap, animations CSS</li>
+          <li>Photoshop, Illustrator</li>
+          <li>Projets responsive</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-success">S’inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalData">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Data Science & AI</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Python, Pandas, NumPy</li>
+          <li>Machine Learning Scikit-learn</li>
+          <li>Deep Learning TensorFlow</li>
+          <li>Visualisation de données</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-success">S’inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalSecu">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Sécurité Informatique</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Protocoles de sécurité</li>
+          <li>Cryptographie moderne</li>
+          <li>Tests d’intrusion</li>
+          <li>Sécurisation des réseaux</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-success">S’inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalLogiciel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Logiciels & Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Cycle de développement</li>
+          <li>Gestion de projet Agile</li>
+          <li>Tests et déploiement</li>
+          <li>Documentation technique</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-success">S’inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center mt-5 p-3 site-footer">
+  <p class="mb-0">© 2026 Centre de Formation</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
