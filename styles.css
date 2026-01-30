@@ -1,6 +1,6 @@
-/* --------------------- */
+
 /* STYLE GLOBAL          */
-/* --------------------- */
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,9 +21,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --------------------- */
+
 /* NAVBAR                */
-/* --------------------- */
+
 
 .navbar {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -33,9 +33,9 @@ a:hover {
     font-size: 1.5rem;
 }
 
-/* --------------------- */
+
 /* HERO / CAROUSEL       */
-/* --------------------- */
+
 
 .hero {
     position: relative;
@@ -50,10 +50,81 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
 }
+/* SECTION CONTACT */
+.contact-rapide {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
 
-/* --------------------- */
+.contact-rapide h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0d6efd;
+}
+
+/* FORM ROW: pour aligner deux champs sur une ligne */
+.contact-form .form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group.full-width {
+  width: 100%;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* BOUTON */
+.contact-form button {
+  background-color: #198754;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form button:hover {
+  background-color: #157347;
+}
+
+/* ALIGNEMENT BOUTON */
+.text-right {
+  text-align: right;
+}
+
+
 /* FORMATIONS CARDS      */
-/* --------------------- */
+
 
 .formation-card {
     border-radius: 10px;
@@ -70,10 +141,8 @@ a:hover {
     color: #007bff; /* bleu Bootstrap */
 }
 
-/* --------------------- */
-/* FORMULAIRE INSCRIPTION */
-/* --------------------- */
 
+/* FORMULAIRE INSCRIPTION */
 .form-inscription {
     background-color: #fff;
     padding: 25px;
@@ -91,17 +160,18 @@ a:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* --------------------- */
+
+
 /* SECTIONS TEXTE        */
-/* --------------------- */
+
 
 .section-texte p {
     margin-bottom: 1rem;
 }
 
-/* --------------------- */
+
 /* STATS / CHIFFRES      */
-/* --------------------- */
+
 
 .stat-box {
     background-color: #fff;
@@ -114,9 +184,9 @@ a:hover {
     transform: translateY(-5px);
 }
 
-/* --------------------- */
+
 /* FOOTER                */
-/* --------------------- */
+
 
 .site-footer {
     background-color: #343a40;
@@ -130,9 +200,8 @@ a:hover {
     color: #fff;
 }
 
-/* --------------------- */
 /* RESPONSIVE            */
-/* --------------------- */
+
 
 @media (max-width: 768px) {
     .bg-caption {

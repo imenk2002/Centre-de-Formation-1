@@ -116,44 +116,36 @@
         </div>
       </section>
 
-      <!-- SECTION CONTACT RAPIDE (exemple formulaire) -->
-      <section class="container mt-5 contact-rapide">
-        <h2 class="text-center mb-4">Une question ?</h2>
-        <form class="row justify-content-center g-3">
-          <div class="col-md-4">
-            <label for="contactNom" class="form-label">Nom</label>
-            <input
-              id="contactNom"
-              type="text"
-              class="form-control"
-              placeholder="Votre nom"
-            />
-          </div>
-          <div class="col-md-4">
-            <label for="contactEmail" class="form-label">Email</label>
-            <input
-              id="contactEmail"
-              type="email"
-              class="form-control"
-              placeholder="exemple@mail.com"
-            />
-          </div>
-          <div class="col-md-8">
-            <label for="contactMessage" class="form-label">Message</label>
-            <textarea
-              id="contactMessage"
-              class="form-control"
-              rows="3"
-              placeholder="Votre message..."
-            ></textarea>
-          </div>
-          <div class="col-md-8 text-end">
-            <button type="submit" class="btn btn-success btn-shadow">
-              Envoyer
-            </button>
-          </div>
-        </form>
-      </section>
+     <!-- SECTION CONTACT RAPIDE -->
+<section class="contact-rapide">
+  <h2>Une question ?</h2>
+  <form class="contact-form">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="contactNom">Nom</label>
+        <input type="text" id="contactNom" placeholder="Votre nom">
+      </div>
+
+      <div class="form-group">
+        <label for="contactEmail">Email</label>
+        <input type="email" id="contactEmail" placeholder="exemple@mail.com">
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="contactMessage">Message</label>
+      <textarea id="contactMessage" rows="4" placeholder="Votre message..."></textarea>
+    </div>
+
+    <div class="form-group full-width text-right">
+      <button type="submit">Envoyer</button>
+    </div>
+
+  </form>
+</section>
+
+
     </main>
 <footer class="bg-dark text-white mt-5 pt-4 pb-3 site-footer">
   <div class="container">
