@@ -1,0 +1,145 @@
+/* --------------------- */
+/* STYLE GLOBAL          */
+/* --------------------- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* fond clair */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------- */
+/* NAVBAR                */
+/* --------------------- */
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* --------------------- */
+/* HERO / CAROUSEL       */
+/* --------------------- */
+
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.bg-caption {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* --------------------- */
+/* FORMATIONS CARDS      */
+/* --------------------- */
+
+.formation-card {
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.formation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    color: #007bff; /* bleu Bootstrap */
+}
+
+/* --------------------- */
+/* FORMULAIRE INSCRIPTION */
+/* --------------------- */
+
+.form-inscription {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 5px;
+}
+
+/* Boutons */
+.btn-shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* --------------------- */
+/* SECTIONS TEXTE        */
+/* --------------------- */
+
+.section-texte p {
+    margin-bottom: 1rem;
+}
+
+/* --------------------- */
+/* STATS / CHIFFRES      */
+/* --------------------- */
+
+.stat-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+/* --------------------- */
+/* FOOTER                */
+/* --------------------- */
+
+.site-footer {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.site-footer a {
+    color: #17a2b8;
+}
+.site-footer a:hover {
+    color: #fff;
+}
+
+/* --------------------- */
+/* RESPONSIVE            */
+/* --------------------- */
+
+@media (max-width: 768px) {
+    .bg-caption {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+    .stat-box {
+        padding: 20px 10px;
+    }
+}
