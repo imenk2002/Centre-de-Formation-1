@@ -43,57 +43,75 @@
 
     <form class="form-inscription">
         
-        <!-- SECTION 1: Informations personnelles (SANS téléphone) -->
-        <fieldset class="mb-4 section-1">
-            <legend>Informations personnelles</legend>
+<!-- SECTION 1: Informations personnelles -->
+<fieldset class="section-personnelle">
+    <legend>Informations personnelles</legend>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="nom">Nom *</label>
-                    <input id="nom" name="nom" type="text" class="form-control mb-3" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="prenom">Prénom *</label>
-                    <input id="prenom" name="prenom" type="text" class="form-control mb-3" required>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col">
+            <label for="nom">Nom *</label>
+            <input id="nom" name="nom" type="text" required>
+        </div>
 
-            <label for="email">Email *</label>
-            <input id="email" name="email" type="email" class="form-control mb-3" required>
-        </fieldset>
+        <div class="col">
+            <label for="prenom">Prénom *</label>
+            <input id="prenom" name="prenom" type="text" required>
+        </div>
+    </div>
 
-        <!-- SECTION 2: Formation (Présentiel / En ligne) -->
-        <fieldset class="mb-4 section-2">
-            <legend>Votre formation</legend>
+    <label for="email">Email *</label>
+    <input id="email" name="email" type="email" required>
+</fieldset>
 
-            <label for="formation">Choisir votre formation :</label>
-            <select id="formation" name="formation" class="form-control mb-3" required>
-                <option value="">Sélectionnez une formation</option>
-                <option>Embedded Systems & IoT</option>
-                <option>Mobile Development</option>
-                <option>Web & Multimedia</option>
-                <option>Data Science & AI</option>
-                <option>Sécurité Informatique</option>
-            </select>
 
-            <!-- MODIF 2: Présentiel / En ligne -->
-            <label>Type de suivi :</label><br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" id="presentiel" name="type" value="presentiel" checked>
-                <label class="form-check-label" for="presentiel">Présentiel</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" id="enligne" name="type" value="enligne">
-                <label class="form-check-label" for="enligne">En ligne</label>
-            </div>
-        </fieldset>
+<!-- SECTION 2: Formation -->
+<fieldset class="section-formation">
+    <legend>Votre formation</legend>
 
-        <!-- SECTION 3: Message (SANS date/distance) -->
-        <fieldset class="mb-4">
-            <legend>Message</legend>
-            <label for="commentaire">Votre commentaire (facultatif)</label>
-            <textarea id="commentaire" name="commentaire" rows="4" class="form-control" placeholder="Votre expérience, vos attentes, questions..."></textarea>
-        </fieldset>
+    <label for="formation">Choisir votre formation :</label>
+    <select id="formation" name="formation" required>
+        <option value="">Sélectionnez une formation</option>
+        <option>Embedded Systems & IoT</option>
+        <option>Mobile Development</option>
+        <option>Web & Multimedia</option>
+        <option>Data Science & AI</option>
+        <option>Sécurité Informatique</option>
+    </select>
+</fieldset>
+
+
+<!-- Type de suivi -->
+<div class="type-suivi">
+    <p class="type-title">Type de suivi :</p>
+
+    <label class="radio-option">
+        <input type="radio" name="type" value="presentiel" checked>
+        Présentiel
+    </label>
+
+    <label class="radio-option">
+        <input type="radio" name="type" value="enligne">
+        En ligne
+    </label>
+</div>
+
+
+<!-- SECTION 3: Message -->
+<fieldset class="section-message">
+    <legend>Message</legend>
+
+    <label for="commentaire">
+        Votre commentaire <span class="optional">(facultatif)</span>
+    </label>
+
+    <textarea
+        id="commentaire"
+        name="commentaire"
+        rows="4"
+        placeholder="Votre expérience, vos attentes, questions...">
+    </textarea>
+</fieldset>
+
 
         <!-- BOUTONS -->
         <div class="text-end">
@@ -117,7 +135,7 @@
     <div class="row text-center text-md-start">
       
       <!-- Adresse -->
-      <div class="col-md-4 mb-3">
+      <div class="col mb-3">
         <p class="mb-1 fw-bold">
           <i class="bi bi-geo-alt-fill me-2"></i>Adresse
         </p>
@@ -125,7 +143,7 @@
       </div>
 
       <!-- Téléphone -->
-      <div class="col-md-4 mb-3">
+      <div class="col mb-3">
         <p class="mb-1 fw-bold">
           <i class="bi bi-telephone-fill me-2"></i>Téléphone
         </p>
@@ -133,7 +151,7 @@
       </div>
 
       <!-- Email -->
-      <div class="col-md-4 mb-3">
+      <div class="col mb-3">
         <p class="mb-1 fw-bold">
           <i class="bi bi-envelope-fill me-2"></i>Email
         </p>

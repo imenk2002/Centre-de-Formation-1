@@ -169,10 +169,6 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-
-/* STATS / CHIFFRES      */
-
-
 .stat-box {
     background-color: #fff;
     border-radius: 10px;
@@ -183,32 +179,177 @@ a:hover {
 .stat-box:hover {
     transform: translateY(-5px);
 }
-
-
-/* FOOTER                */
-
-
-.site-footer {
-    background-color: #343a40;
-    color: #fff;
-    font-size: 0.9rem;
-}
-.site-footer a {
-    color: #17a2b8;
-}
-.site-footer a:hover {
-    color: #fff;
+/* Section message */
+.section-message {
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
 }
 
-/* RESPONSIVE            */
+/* Titre */
+.section-message legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 8px;
+}
 
+/* Label */
+.section-message label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+}
 
-@media (max-width: 768px) {
-    .bg-caption {
-        font-size: 0.9rem;
-        padding: 15px;
-    }
-    .stat-box {
-        padding: 20px 10px;
+/* Texte "facultatif" */
+.section-message .optional {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Zone de texte */
+.section-message textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Effet focus (quand on clique dedans) */
+.section-message textarea:focus {
+    outline: none;
+    border-color: #198754; /* vert pro */
+}
+/* Bloc type de suivi */
+.type-suivi {
+    margin-top: 10px;
+}
+
+/* Titre */
+.type-title {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Options radio */
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 0.95rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Bouton radio */
+.radio-option input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #198754; /* vert pro */
+}
+/* Section formation */
+.section-formation {
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+/* Titre */
+.section-formation legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 8px;
+}
+
+/* Label */
+.section-formation label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Select */
+.section-formation select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Focus (quand on clique) */
+.section-formation select:focus {
+    outline: none;
+    border-color: #198754; /* vert professionnel */
+}
+/* Section informations personnelles */
+.section-personnelle {
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+/* Titre */
+.section-personnelle legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 8px;
+}
+
+/* Labels */
+.section-personnelle label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Champs input */
+.section-personnelle input[type="text"],
+.section-personnelle input[type="email"] {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+/* Effet focus */
+.section-personnelle input:focus {
+    outline: none;
+    border-color: #198754; /* vert professionnel */
+}
+
+/* Ligne avec 2 colonnes */
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Colonnes */
+.col {
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
     }
 }
